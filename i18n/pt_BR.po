@@ -1,0 +1,193 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ipln_reconcile_by_cents
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"PO-Revision-Date: 2026-10-19 00:00+0000\n"
+"Last-Translator: IPLN\n"
+"Language-Team: Portuguese (Brazil)\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.module.module,shortdesc:ipln_reconcile_by_cents.module_ipln_reconcile_by_cents
+msgid "IPLN Reconciliation by Cents"
+msgstr "Reconciliação por Centavos da IPLN"
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.module.module,summary:ipln_reconcile_by_cents.module_ipln_reconcile_by_cents
+msgid "Generate reconciliation models from PIX cents rules"
+msgstr "Gera modelos de reconciliação a partir de regras de centavos do PIX"
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.model.fields,field_description:ipln_reconcile_by_cents.field_ipln_reconcile_rule_cents__active
+msgid "Active"
+msgstr "Ativo"
+
+#. module: ipln_reconcile_by_cents
+#: model_terms:ir.ui.view,arch_db:ipln_reconcile_by_cents.view_ipln_reconcile_rule_cents_form
+msgid "Analytic Accounting"
+msgstr "Contabilidade Analítica"
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.model.fields,field_description:ipln_reconcile_by_cents.field_ipln_reconcile_rule_cents__analytic_distribution
+msgid "Analytic Distribution"
+msgstr "Distribuição Analítica"
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.model.fields,field_description:ipln_reconcile_by_cents.field_ipln_reconcile_rule_cents__analytic_tag_ids
+msgid "Analytic Tags"
+msgstr "Etiquetas Analíticas"
+
+#. module: ipln_reconcile_by_cents
+#: model_terms:ir.ui.view,arch_db:ipln_reconcile_by_cents.view_ipln_reconcile_rule_cents_form
+#: model_terms:ir.ui.view,arch_db:ipln_reconcile_by_cents.view_ipln_reconcile_rule_cents_search
+msgid "Archived"
+msgstr "Arquivada"
+
+#. module: ipln_reconcile_by_cents
+#: model_terms:ir.ui.view,arch_db:ipln_reconcile_by_cents.view_ipln_reconcile_rule_cents_search
+msgid "Catch-all"
+msgstr "Todos os centavos"
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.model.fields,field_description:ipln_reconcile_by_cents.field_ipln_reconcile_rule_cents__cents
+msgid "Cents"
+msgstr "Centavos"
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.model.fields,help:ipln_reconcile_by_cents.field_ipln_reconcile_rule_cents__cents
+msgid "Cent value from 0 to 99. Leave empty to match every cent value."
+msgstr "Valor dos centavos de 0 a 99. Deixe vazio para corresponder a qualquer valor de centavos."
+
+#. module: ipln_reconcile_by_cents
+#. odoo-python
+#: code:addons/ipln_reconcile_by_cents/models/reconcile_rule_cents.py:0
+#, python-format
+msgid "Cents must be between 0 and 99."
+msgstr "Os centavos devem estar entre 0 e 99."
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.model.fields,field_description:ipln_reconcile_by_cents.field_ipln_reconcile_rule_cents__company_id
+#: model_terms:ir.ui.view,arch_db:ipln_reconcile_by_cents.view_ipln_reconcile_rule_cents_search
+msgid "Company"
+msgstr "Empresa"
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.model.fields,field_description:ipln_reconcile_by_cents.field_ipln_reconcile_rule_cents__counterpart_account_id
+msgid "Counterpart Account"
+msgstr "Conta de Contrapartida"
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.model.fields,field_description:ipln_reconcile_by_cents.field_ipln_reconcile_rule_cents__counterpart_account_code
+msgid "Counterpart Account Code"
+msgstr "Código da Conta de Contrapartida"
+
+#. module: ipln_reconcile_by_cents
+#: model_terms:ir.actions.act_window,help:ipln_reconcile_by_cents.action_ipln_reconcile_rule_cents
+msgid "Create a reconciliation rule by cents"
+msgstr "Crie uma regra de reconciliação por centavos"
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.model.fields,field_description:ipln_reconcile_by_cents.field_ipln_reconcile_rule_cents__currency_id
+msgid "Currency"
+msgstr "Moeda"
+
+#. module: ipln_reconcile_by_cents
+#: model_terms:ir.ui.view,arch_db:ipln_reconcile_by_cents.view_ipln_reconcile_rule_cents_form
+msgid "Empty matches every cent value"
+msgstr "Deixe vazio para corresponder a qualquer valor de centavos"
+
+#. module: ipln_reconcile_by_cents
+#. odoo-python
+#: code:addons/ipln_reconcile_by_cents/models/reconcile_rule_cents.py:0
+#, python-format
+msgid "Expected exactly one account with code %(code)s for %(company)s; found %(count)s."
+msgstr "Era esperada exatamente uma conta com o código %(code)s para %(company)s; foram encontradas %(count)s."
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.model.fields,field_description:ipln_reconcile_by_cents.field_ipln_reconcile_rule_cents__reconcile_model_id
+msgid "Generated Reconciliation Model"
+msgstr "Modelo de Reconciliação Gerado"
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.model.fields,help:ipln_reconcile_by_cents.field_ipln_reconcile_rule_cents__maximum_amount
+msgid "Leave zero to apply the rule without an amount limit."
+msgstr "Deixe zero para aplicar a regra sem limite de valor."
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.model.fields,field_description:ipln_reconcile_by_cents.field_ipln_reconcile_rule_cents__maximum_amount
+msgid "Maximum Amount"
+msgstr "Valor Máximo"
+
+#. module: ipln_reconcile_by_cents
+#. odoo-python
+#: code:addons/ipln_reconcile_by_cents/models/reconcile_rule_cents.py:0
+#, python-format
+msgid "Maximum amount cannot be negative."
+msgstr "O valor máximo não pode ser negativo."
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.model.fields,field_description:ipln_reconcile_by_cents.field_ipln_reconcile_rule_cents__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.model,name:ipln_reconcile_by_cents.model_ipln_reconcile_rule_cents
+#: model_terms:ir.ui.view,arch_db:ipln_reconcile_by_cents.view_ipln_reconcile_rule_cents_form
+msgid "Reconciliation Rule by Cents"
+msgstr "Regra de Reconciliação por Centavos"
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.actions.act_window,name:ipln_reconcile_by_cents.action_ipln_reconcile_rule_cents
+#: model_terms:ir.ui.view,arch_db:ipln_reconcile_by_cents.view_ipln_reconcile_rule_cents_list
+#: model_terms:ir.ui.view,arch_db:ipln_reconcile_by_cents.view_ipln_reconcile_rule_cents_search
+msgid "Reconciliation Rules by Cents"
+msgstr "Regras de Reconciliação por Centavos"
+
+#. module: ipln_reconcile_by_cents
+#. odoo-python
+#: code:addons/ipln_reconcile_by_cents/models/reconcile_rule_cents.py:0
+#: model_terms:ir.ui.view,arch_db:ipln_reconcile_by_cents.view_ipln_reconcile_rule_cents_form
+msgid "Reconciliation Model"
+msgstr "Modelo de Reconciliação"
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.ui.menu,name:ipln_reconcile_by_cents.menu_ipln_reconcile_rule_cents
+msgid "Rules by Cents"
+msgstr "Regras por Centavos"
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.model.fields,field_description:ipln_reconcile_by_cents.field_ipln_reconcile_rule_cents__sequence
+msgid "Sequence"
+msgstr "Sequência"
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.model.fields,field_description:ipln_reconcile_by_cents.field_account_reconcile_model__source_cents_rule_id
+msgid "Source Cents Rule"
+msgstr "Regra de Centavos de Origem"
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.model.fields,help:ipln_reconcile_by_cents.field_ipln_reconcile_rule_cents__counterpart_account_code
+msgid "Stable account code used by configuration data."
+msgstr "Código estável da conta usado pelos dados de configuração."
+
+#. module: ipln_reconcile_by_cents
+#: model_terms:ir.ui.view,arch_db:ipln_reconcile_by_cents.view_ipln_reconcile_rule_cents_form
+msgid "Synchronize"
+msgstr "Sincronizar"
+
+#. module: ipln_reconcile_by_cents
+#: model:ir.model.constraint,message:ipln_reconcile_by_cents.constraint_account_reconcile_model_source_cents_rule_unique
+msgid "A cents rule can only be linked to one reconciliation model."
+msgstr "Uma regra de centavos só pode estar vinculada a um modelo de reconciliação."
+
+#. module: ipln_reconcile_by_cents
+#: model_terms:ir.actions.act_window,help:ipln_reconcile_by_cents.action_ipln_reconcile_rule_cents
+msgid "The rule generates and maintains a standard reconciliation model."
+msgstr "A regra gera e mantém um modelo de reconciliação padrão."

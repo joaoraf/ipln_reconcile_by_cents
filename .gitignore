@@ -1,0 +1,15 @@
+.env
+.idea/
+.venv/
+*.iml
+*.log
+*.py[cod]
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.vim/
+data/
+backups/
+reports/*.json
+reports/*.md
+!reports/README.md
