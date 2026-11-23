@@ -191,8 +191,7 @@ class IplnReconcileRuleCents(models.Model):
         # statement label before matching.  Keep this in sync with the
         # received-payment expression in transform_expectation.py.
         label_pattern = (
-            r".*(?:(?:pix|transferência)[ -]*recebid[oa]|"
-            r"transferência periódica).*amount:.*"
+                r".*(?:(?:pix|transferência)[ -]*(?:recebid[oa]|agendad[oa]|periódic[oa])).*amount:.*"
         )
         if self.cents is not None:
             label_pattern += rf"\.{self.cents:02d}"

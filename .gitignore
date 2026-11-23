@@ -13,3 +13,4 @@ backups/
 reports/*.json
 reports/*.md
 !reports/README.md
+**/*.sw*
